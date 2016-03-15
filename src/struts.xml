@@ -11,6 +11,10 @@
 		
 		</action>
 		
+		<action name="getJsonAction" class="com.shengsiyuan.action.json.GetGsonAction">
+		
+		</action>
+		
 	</package>
 	
 </struts>
