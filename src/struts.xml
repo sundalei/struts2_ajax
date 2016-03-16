@@ -5,7 +5,7 @@
 
 <struts>
 	
-	<package name="struts2_ajax" extends="struts-default">
+	<package name="struts2_ajax" extends="json-default">
 		
 		<action name="getXMLAction" class="com.shengsiyuan.action.xml.GetXMLAction">
 		
@@ -13,6 +13,12 @@
 		
 		<action name="getJsonAction" class="com.shengsiyuan.action.json.GetGsonAction">
 		
+		</action>
+		
+		<action name="getJsonAction2" class="com.shengsiyuan.action.json.GetGsonAction2">
+			<result name="success" type="json">
+				<param name="excludeProperties">address</param>
+			</result>
 		</action>
 		
 	</package>

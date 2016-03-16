@@ -11,12 +11,12 @@
 
 $(document).ready(function() {
 	$("#button1").click(function() {
-		$.get("getJsonAction.action", {name: $("#name").val()}, function(returnedData, status) {
+		$.get("getJsonAction2.action", {name: $("#name").val()}, function(returnedData, status) {
 			var people = returnedData;
 			
 			var id = people.id;
 			var name = people.name;
-			var age = people.age;
+			var age = people.myAge;
 			var address = people.address;
 			
 			var html = "<table width='60%' border='1' align='center'><tr><th>id</th>" + 
