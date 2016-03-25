@@ -21,6 +21,10 @@
 			</result>
 		</action>
 		
+		<action name="ognlAction" class="com.shengsiyuan.action.ognl.OgnlAction">
+			<result name="success">/ognl.jsp</result>
+		</action>
+		
 	</package>
 	
 </struts>
